@@ -1,4 +1,4 @@
-# crm-component-exporter-comparer
+# crm-component-comparer-exporter
 ## About
 This tool will help in comparing various Dynamics CRM 365 components from different environments.
 ## Query
