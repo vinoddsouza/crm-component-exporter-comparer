@@ -70,3 +70,6 @@ This functionality support only for XrmToolBox.
 3. Select compare tool (Right now support DiffMerge only)
 4. Enter DiffMerge executable file path
 
+### Credit
+Icon - https://www.flaticon.com/free-icon/ab-testing_4661446
+Menees.Diffs https://github.com/menees/Diff.Net
