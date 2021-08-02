@@ -83,7 +83,7 @@ Pattern should follow wildcard format. See https://support.microsoft.com/en-us/o
 ### Query Example
 
 ```
-Entity=contact,account,sale*;WebResource=contact.js
+Table=contact,account,sale*;WebResource=contact.js
 ```
 
 > Hint: Use `*` to include all component
