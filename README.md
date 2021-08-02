@@ -1,6 +1,5 @@
 # crm-component-comparer-exporter
 
-## About
 CRM Component Comparer and Exporter tool will help developers, system administrators, and business analysts to compare two Dynamics CRM environments and export components to manage version history.
 
 **Major features**
