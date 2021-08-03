@@ -1,6 +1,73 @@
 # crm-component-comparer-exporter
-## About
-This tool will help in comparing various Dynamics CRM 365 components from different environments.
+
+CRM Component Comparer and Exporter tool will help developers, system administrators, and business analysts to compare two Dynamics CRM environments and export components to manage version history.
+
+**Major features**
+
+-	Powerful Query Editor - define multiple queries, select the whole solution, pick and choose the components for comparison 
+-	List view showing the components that are different, drill down, filter what is modified and what is not
+-	Log view to show the progress 
+-	Visually see the difference using built-in file comparer tool
+-	Export components to manage version history
+
+This tool was tested on Microsoft Dynamics 365 9.2 online version.
+
+## Getting Started
+
+![Home Screen](https://github.com/vinoddsouza/crm-component-comparer-exporter/blob/feature/documentations/screenshots/home-screen.png?raw=true)
+
+-	Select the source and target environments
+-	Click on the ‘Add’ button to define the query 
+
+![Query Editor 1](https://github.com/vinoddsouza/crm-component-comparer-exporter/blob/feature/documentations/screenshots/query-editor-1.png?raw=true)
+
+-	Select the solution to compare. And click the ‘Ok’ button. All components within the solution will be selected 
+
+![Query Editor 2](https://github.com/vinoddsouza/crm-component-comparer-exporter/blob/feature/documentations/screenshots/query-editor-2.png?raw=true)
+
+-	Alternatively, you can also select specific components using the name, schema name and wild cards.
+
+![Query Options](https://github.com/vinoddsouza/crm-component-comparer-exporter/blob/feature/documentations/screenshots/query-options.png?raw=true)
+
+-	Click the ‘Options’ button on the main screen to select additional settings. Ribbons are not included by default when comparing the tables. Select this option If you want to compare the ribbons.
+
+![Compare Screen](https://github.com/vinoddsouza/crm-component-comparer-exporter/blob/feature/documentations/screenshots/compare-screen.png?raw=true)
+
+-	Tool supports multiple queries. 
+-	To Edit/Remove select the query and click on Edit/Remove button.
+-	Click on the ‘compare’ button. 
+
+
+![Compare Result 1](https://github.com/vinoddsouza/crm-component-comparer-exporter/blob/feature/documentations/screenshots/compare-result-1.png?raw=true)
+
+-	Compare Result will pop up to show the list of files. You can drill down to view the files. 
+
+![Compare Result 2](https://github.com/vinoddsouza/crm-component-comparer-exporter/blob/feature/documentations/screenshots/compare-result-2.png?raw=true)
+
+  -	Modified – The component is different 
+  -	Unchanged – No changes are found 
+  -	Only in source – Component is found the source but not in the target environment (if the comparison is on a solution, it means the component is not found in the solution)
+  -	Only in target – Component is found in target but not in the source environment (if the comparison is on a solution, it means the component is not found in the solution)
+
+-	Double click on a row to drilldown or open file comparison tool.
+-	If you close the compare result screen accidentally, open it again by clicking the ‘View Last Result’ button on the main screen.
+
+![File Comparision View 1](https://github.com/vinoddsouza/crm-component-comparer-exporter/blob/feature/documentations/screenshots/file-comparision-view-1.png?raw=true)
+
+-	The difference is shown in for a security role 
+
+![File Comparision View 2](https://github.com/vinoddsouza/crm-component-comparer-exporter/blob/feature/documentations/screenshots/file-comparision-view-2.png?raw=true)
+
+-	The difference is shown in for a web resource 
+
+**Export components (Source environment only)**
+
+![Export Screen](https://github.com/vinoddsouza/crm-component-comparer-exporter/blob/feature/documentations/screenshots/export-screen.png?raw=true)
+
+-	Export CRM components to save in file system.
+-	Export helps to manage version history for single environment.
+
+
 ## Query
 
 ### Query pattern
@@ -16,7 +83,7 @@ Pattern should follow wildcard format. See https://support.microsoft.com/en-us/o
 ### Query Example
 
 ```
-Entity=contact,account,sale*;WebResource=contact.js
+Table=contact,account,sale*;WebResource=contact.js
 ```
 
 > Hint: Use `*` to include all component
@@ -27,19 +94,20 @@ Entity=contact,account,sale*;WebResource=contact.js
 
 ### Supported components
 
-- Entity - Pattern should contains logical name of entity.
-- WebResource - Pattern should content unique name of webresource.
+- Table - Pattern should contains schema name of table.
+- WebResource - Pattern should content schema name of webresource.
 - PluginStep - Pattern should content display name of step.
-- OptionSet - Pattern should content unique name of OptionSet.
+- Choice - Pattern should content schema name of Choice.
 - Dashboard - Pattern should content display name of dashboard.
-- SiteMap - Pattern should content unique name of sitemap.
+- SiteMap - Pattern should content display name of sitemap.
 - SecurityRole - Pattern should content display name of security role.
 - Workflow - Pattern should content display name of workflow.
 - BusinessRule - Pattern should content display name of businessrule.
 - Action - Pattern should content display name of action.
 - BusinessProcessFlow - Pattern should content display name of business process flow.
-- ModelDrivenApp - Pattern should content unique name of model driven app.
+- ModelDrivenApp - Pattern should content display name of model driven app.
 
+<!--
 ### Additional settings
 
 - IncludeSystemWebresource - By adding this boolean property in query will allow to add system webresource (Not recommended).
@@ -69,6 +137,7 @@ This functionality support only for XrmToolBox.
 2. Go to Compare tab
 3. Select compare tool (Right now support DiffMerge only)
 4. Enter DiffMerge executable file path
+-->
 
 ### Credit
 Icon - https://www.flaticon.com/free-icon/ab-testing_4661446
