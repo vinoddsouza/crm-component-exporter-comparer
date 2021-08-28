@@ -14,59 +14,62 @@ This tool was tested on Microsoft Dynamics 365 9.2 online version.
 
 ## Getting Started
 
-![Home Screen](https://github.com/vinoddsouza/crm-component-comparer-exporter/blob/feature/documentations/screenshots/home-screen.png?raw=true)
-
 -	Select the source and target environments
 -	Click on the ‘Add’ button to define the query 
+- Alternatively select previously exported zip file in order to compare with previous version instead of target environment
 
-![Query Editor 1](https://github.com/vinoddsouza/crm-component-comparer-exporter/blob/feature/documentations/screenshots/query-editor-1.png?raw=true)
+![Home Screen](https://github.com/vinoddsouza/crm-component-comparer-exporter/blob/main/screenshots/home-screen.png?raw=true)
 
 -	Select the solution to compare. And click the ‘Ok’ button. All components within the solution will be selected 
 
-![Query Editor 2](https://github.com/vinoddsouza/crm-component-comparer-exporter/blob/feature/documentations/screenshots/query-editor-2.png?raw=true)
+![Query Editor 1](https://github.com/vinoddsouza/crm-component-comparer-exporter/blob/main/screenshots/query-editor-1.png?raw=true)
 
 -	Alternatively, you can also select specific components using the name, schema name and wild cards.
 
-![Query Options](https://github.com/vinoddsouza/crm-component-comparer-exporter/blob/feature/documentations/screenshots/query-options.png?raw=true)
+![Query Editor 2](https://github.com/vinoddsouza/crm-component-comparer-exporter/blob/main/screenshots/query-editor-2.png?raw=true)
 
 -	Click the ‘Options’ button on the main screen to select additional settings. Ribbons are not included by default when comparing the tables. Select this option If you want to compare the ribbons.
 
-![Compare Screen](https://github.com/vinoddsouza/crm-component-comparer-exporter/blob/feature/documentations/screenshots/compare-screen.png?raw=true)
+![Query Options](https://github.com/vinoddsouza/crm-component-comparer-exporter/blob/main/screenshots/query-options.png?raw=true)
 
 -	Tool supports multiple queries. 
 -	To Edit/Remove select the query and click on Edit/Remove button.
 -	Click on the ‘compare’ button. 
 
-
-![Compare Result 1](https://github.com/vinoddsouza/crm-component-comparer-exporter/blob/feature/documentations/screenshots/compare-result-1.png?raw=true)
+![Compare Screen](https://github.com/vinoddsouza/crm-component-comparer-exporter/blob/main/screenshots/compare-screen.png?raw=true)
 
 -	Compare Result will pop up to show the list of files. You can drill down to view the files. 
 
-![Compare Result 2](https://github.com/vinoddsouza/crm-component-comparer-exporter/blob/feature/documentations/screenshots/compare-result-2.png?raw=true)
+![Compare Result 1](https://github.com/vinoddsouza/crm-component-comparer-exporter/blob/main/screenshots/compare-result-1.png?raw=true)
 
-  -	Modified – The component is different 
-  -	Unchanged – No changes are found 
-  -	Only in source – Component is found the source but not in the target environment (if the comparison is on a solution, it means the component is not found in the solution)
-  -	Only in target – Component is found in target but not in the source environment (if the comparison is on a solution, it means the component is not found in the solution)
+  -	**Unchanged** – No changes are found 
+  -	**Modified** – The component is different 
+  -	**Only in source** – Component is found the source but not in the target environment (if the comparison is on a solution, it means the component is not found in the solution)
+  -	**Only in target** – Component is found in target but not in the source environment (if the comparison is on a solution, it means the component is not found in the solution)
+
+  > Use filter option on bottom left to update the filter on the screen.
+
+<br>
 
 -	Double click on a row to drilldown or open file comparison tool.
 -	If you close the compare result screen accidentally, open it again by clicking the ‘View Last Result’ button on the main screen.
 
-![File Comparision View 1](https://github.com/vinoddsouza/crm-component-comparer-exporter/blob/feature/documentations/screenshots/file-comparision-view-1.png?raw=true)
+![Compare Result 2](https://github.com/vinoddsouza/crm-component-comparer-exporter/blob/main/screenshots/compare-result-2.png?raw=true)
 
 -	The difference is shown in for a security role 
 
-![File Comparision View 2](https://github.com/vinoddsouza/crm-component-comparer-exporter/blob/feature/documentations/screenshots/file-comparision-view-2.png?raw=true)
+![File Comparision View 1](https://github.com/vinoddsouza/crm-component-comparer-exporter/blob/main/screenshots/file-comparision-view-1.png?raw=true)
 
 -	The difference is shown in for a web resource 
 
-**Export components (Source environment only)**
+![File Comparision View 2](https://github.com/vinoddsouza/crm-component-comparer-exporter/blob/main/screenshots/file-comparision-view-2.png?raw=true)
 
-![Export Screen](https://github.com/vinoddsouza/crm-component-comparer-exporter/blob/feature/documentations/screenshots/export-screen.png?raw=true)
+**Export components (Source environment only)**
 
 -	Export CRM components to save in file system.
 -	Export helps to manage version history for single environment.
 
+![Export Screen](https://github.com/vinoddsouza/crm-component-comparer-exporter/blob/main/screenshots/export-screen.png?raw=true)
 
 ## Query
 
