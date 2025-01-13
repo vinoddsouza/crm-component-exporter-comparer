@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35506.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RioCanada.Crm.ComponentExportComparer.XrmToolBoxPlugin", "RioCanada.Crm.ComponentExportComparer.XrmToolBoxPlugin\RioCanada.Crm.ComponentExportComparer.XrmToolBoxPlugin.csproj", "{D2C6332D-6D70-4B4F-9A85-5FB242B5C818}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RioCanada.Crm.ComponentExportComparer.Core", "RioCanada.Crm.ComponentExportComparer.Core\RioCanada.Crm.ComponentExportComparer.Core.csproj", "{02C8CD44-80A1-4C71-806A-608807AB638A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2C6332D-6D70-4B4F-9A85-5FB242B5C818}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2C6332D-6D70-4B4F-9A85-5FB242B5C818}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2C6332D-6D70-4B4F-9A85-5FB242B5C818}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2C6332D-6D70-4B4F-9A85-5FB242B5C818}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02C8CD44-80A1-4C71-806A-608807AB638A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02C8CD44-80A1-4C71-806A-608807AB638A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02C8CD44-80A1-4C71-806A-608807AB638A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02C8CD44-80A1-4C71-806A-608807AB638A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
